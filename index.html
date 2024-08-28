@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador ARJAV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Encriptador ARJAV</h1>
+    </header>
+
+    <div class="main-container">
+        <div class="input-section">
+            <h2>Encriptador ARJAV: Disfruta de tu experiencia</h2>
+            <textarea id="inputText" placeholder="Ingresa el texto aquí..."></textarea>
+            <div class="buttons">
+                <button class="encriptar-btn" onclick="encriptar()">Encriptar</button>
+                <button class="desencriptar-btn" onclick="desencriptar()">Desencriptar</button>
+            </div>
+            <p class="note">⚠️ Solo letras minúsculas y sin acentos</p>
+        </div>
+
+        <div class="output-section">
+            <div id="outputContainer">
+                <img src="assets/imgag.png" alt="Placeholder image">
+                <p id="outputText">Ningún mensaje fue encontrado </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Proyecto desarrollado por Ariel Murillo</p>
+    </footer>
+
+    <script src="Encriptador.js"></script>
+</body>
+</html>

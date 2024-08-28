@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f3f4;
+    color: #131B23;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2274A5;
+    color: #E7DFC6;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+.input-section {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.input-section h2 {
+    color: #2274A5;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 70%;
+    height: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f2f3f4;
+    color: #131B23;
+    justify-content: center;
+    resize: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.encriptar-btn, .desencriptar-btn {
+    margin-right: 10px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.encriptar-btn {
+    background-color: #154360;
+    color: #E9F1F7;
+    border-radius: 10px;
+}
+
+.desencriptar-btn {
+    background-color: #cacfd2;
+    color: #131B23;
+    border-radius: 10px;
+}
+
+.encriptar-btn:hover {
+    background-color: #131B23;
+}
+
+.desencriptar-btn:hover {
+    background-color: #9c9c9c;
+}
+
+.note {
+    font-size: 12px;
+    color: #816C61;
+    margin-top: 10px;
+}
+
+.output-section {
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 350px;
+    height: 944px;
+}
+
+#outputContainer {
+    text-align: center;
+    color: #131B23;
+}
+
+#outputText {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #131B23;
+    color: #E7DFC6;
+    text-align: center;
+    padding: 10px 0;
+}
+@media (max-width: 1024px) {
+    .main-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .input-section, .output-section {
+        width: 100%;
+        margin: 0;
+    }
+
+    textarea {
+        width: 100%;
+        height: 180px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .encriptar-btn, .desencriptar-btn {
+        width: 90%;
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+
+    .output-section {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    #outputText {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .input-section, .output-section {
+        width: 100%;
+        margin: 0;
+    }
+
+    textarea {
+        width: 100%;
+        height: 150px;
+    }
+
+    .encriptar-btn, .desencriptar-btn {
+        width: 95%;
+        margin-bottom: 8px;
+        padding: 15px;
+    }
+
+    .output-section {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #outputText {
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .input-section, .output-section {
+        width: 100%;
+        margin: 0;
+    }
+
+    textarea {
+        width: 100%;
+        height: 120px;
+    }
+
+    .encriptar-btn, .desencriptar-btn {
+        width: 100%;
+        margin-bottom: 6px;
+        padding: 12px;
+    }
+
+    .output-section {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #outputText {
+        font-size: 12px;
+    }
+}
